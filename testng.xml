@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  </test> <!-- Test -->
+  <test name = "Test On Edge">
+	  	<parameter name = "BrowserType" value = "Microsoft Edge"/>
+	   	  	<classes>
+	  			<class name = "tests.TestSearchResult"/>
+	  		</classes>
+  </test> <!-- Test On Edge -->
+      	  	  		  	
+  	<test name = "Test On Firefox">
+	  	<parameter name = "BrowserType" value = "Firefox"/>
+		  	<classes>
+	  			<class name = "tests.TestSearchResult"/>
+	  		</classes>
+  	</test> <!-- Test On Firefox -->
+  	
+   <test name = "Test On Chrome">
+		<parameter name = "BrowserType" value = "Chrome"/>
+		  	<classes>
+	  			<class name = "tests.TestSearchResult"/>
+	  		</classes>
+  	</test> <!-- Test On Chrome --> 
+  
+</suite> <!-- Suite -->
